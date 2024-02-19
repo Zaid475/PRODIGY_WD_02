@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+  .stopwatch {
+    
+    text-align: center;
+  }
+  
+  .display {
+    
+    font-size: 2em;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    width: 120px;
+    margin-left: 555px;
+    background-color: black;
+    color: white;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    transition: box-shadow 0s;
+    border-radius: 8px;
+  }
+  
+  button:hover{
+    box-shadow: 5px 5px;
+
+  }
+  
+  .laps {
+    text-align: center;
+    list-style-type: none;
+  }
+</style>
+</head>
+<body>
+  <div class="stopwatch">
+    <div class="display">00:00:00</div>
+    <button class="start">Start</button>
+    <button class="pause">Pause</button>
+    <button class="reset">Reset</button>
+    <button class="lap">Lap</button>
+    <ul class="laps"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
